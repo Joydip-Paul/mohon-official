@@ -27,6 +27,10 @@ body {
   width: 120px;
 }
 
+nav{
+  z-index: 1;
+}
+
 nav ul {
   float: right;
   margin-right: 20px;
@@ -161,6 +165,10 @@ nav ul li a {
 
 .about-me-right img {
   float: right;
+}
+
+.profileImg{
+  width: 75%;
 }
 
 .single-icon {
