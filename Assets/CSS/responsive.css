@@ -12,6 +12,9 @@
   line-height: 0;
   font-size: 12px;
 }
+.banner-content, .banner-social, .download_cv{
+      margin-left: 14%;
+  }
 }
 
 @media only screen and (max-width: 600px) {

@@ -43,7 +43,7 @@ body {
 }
 
 nav{
-  z-index: 1;
+  z-index: 1000;
 }
 
 nav ul {
@@ -88,6 +88,7 @@ nav ul li a {
   .checkbtn {
     display: block;
   }
+
   ul {
     position: fixed;
     width: 100%;
@@ -98,6 +99,7 @@ nav ul li a {
     text-align: center;
     background-color: #000000;
     transition: all 0.5s;
+    z-index: 1;
   }
   nav ul li {
     display: block;
@@ -108,6 +110,7 @@ nav ul li a {
   #check:checked ~ ul {
     top: 80px;
   }
+
 }
 /* Header End */
 
