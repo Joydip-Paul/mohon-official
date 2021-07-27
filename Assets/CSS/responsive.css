@@ -40,6 +40,9 @@
 .banner-social a {
   font-size: 22px;
 }
+.contact{
+      flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 320px) {
