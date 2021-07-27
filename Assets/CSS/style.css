@@ -116,10 +116,6 @@ nav ul li a {
   margin-top: 15%;
 }
 
-.banner-content h1 {
-  /* line-height: 40px; */
-}
-
 .banner-content p {
   line-height: 10px;
 }
@@ -139,6 +135,10 @@ nav ul li a {
 #first-icon {
   margin: 0 15px 0 0;
 }
+
+/* .profileImg{
+  width: 75%;
+} */
 
 /* About Me area is start */
 .about-me-left p {
@@ -176,4 +176,47 @@ nav ul li a {
 .single-icon p {
   padding: 0 0 20px 0;
   font-size: 12px;
+}
+
+.project-img{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+  place-items: center;
+}
+
+.single{
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.single img:hover{
+  width: 100%;
+  transform: scale(1.06);
+  transition: .5s;
+}
+
+.single img{
+  width: 100%;
+}
+
+
+.more-design a{
+  color: var(--white);
+}
+
+.more-design a:hover{
+  color: var(--theme-color--two);
+}
+
+.date{
+  font-size: 12px;
+}
+
+.experience p{
+  line-height: 12px;
+}
+
+.experience span{
+  font-weight: 400;
 }
