@@ -2,6 +2,9 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .single-icon p {
+  font-size: 10px;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -12,9 +15,25 @@
   line-height: 0;
   font-size: 12px;
 }
-.banner-content, .banner-social, .download_cv{
-      margin-left: 14%;
+  .banner-content h1{
+    font-size: 25px;
   }
+  .profileImg{
+    margin-top: 15%;
+  }
+  .about-me-right img {
+  margin-top: 18%;
+}
+  .about-me-left p{
+  font-size: 12px;
+}
+.single-footer h4 {
+  font-size: 12px;
+}
+.single-footer p {
+  line-height: 1px;
+  font-size: 10px;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -25,8 +44,18 @@
       margin-left: 14%;
   }
   .get-me-content{
-      font-size: 12px;
+      font-size: 10px;
   }
+  .single-footer h4{
+    font-size: 12px;
+  }
+  .footer-me{
+    margin-bottom: 20px;
+  }
+  .single-footer p {
+  line-height: 1px;
+  font-size: 10px;
+}
 }
 
 @media only screen and (max-width: 400px) {
@@ -46,6 +75,12 @@
 .contact{
       flex-direction: column;
   }
+  .gallery{
+    grid-template-columns: repeat(1, 1fr);
+}
+.project-nav{
+  padding: 0 25px;
+}
 }
 
 @media only screen and (max-width: 320px) {
