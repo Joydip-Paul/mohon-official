@@ -3,97 +3,104 @@
 
 @media only screen and (max-width: 992px) {
   .single-icon p {
-  font-size: 10px;
-}
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .project-img {
     grid-template-columns: repeat(2, 1fr);
   }
-  .single-footer p{
-  line-height: 0;
-  font-size: 12px;
-}
-  .banner-content h1{
+  .single-footer p {
+    line-height: 0;
+    font-size: 12px;
+  }
+  .banner-content h1 {
     font-size: 25px;
   }
-  .profileImg{
+  .profileImg {
     margin-top: 15%;
   }
   .about-me-right img {
-  margin-top: 18%;
-}
-  .about-me-left p{
-  font-size: 12px;
-}
-.single-footer h4 {
-  font-size: 12px;
-}
-.single-footer p {
-  line-height: 1px;
-  font-size: 10px;
-}
-nav ul li a:hover {
-  border-bottom: 2px solid #ffd200;
-}
+    margin-top: 18%;
+  }
+  .about-me-left p {
+    font-size: 12px;
+  }
+  .single-footer h4 {
+    font-size: 12px;
+  }
+  .single-footer p {
+    line-height: 1px;
+    font-size: 10px;
+  }
+  nav ul li a:hover {
+    border-bottom: 2px solid #ffd200;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .profileImg {
     width: 100%;
   }
-  .banner-content, .banner-social, .download_cv{
-      margin-left: 14%;
+  .banner-content,
+  .banner-social,
+  .download_cv {
+    margin-left: 14%;
   }
-  .get-me-content{
-      font-size: 10px;
+  .get-me-content {
+    font-size: 10px;
   }
-  .single-footer h4{
+  .single-footer h4 {
     font-size: 12px;
   }
-  .footer-me{
+  .footer-me {
     margin-bottom: 20px;
   }
   .single-footer p {
-  line-height: 1px;
-  font-size: 10px;
-}
+    line-height: 1px;
+    font-size: 10px;
+  }
 }
 
-@media only screen and (max-width: 400px) {
-  .banner-content, .banner-social, .download_cv{
-      margin-left: 16%;
+@media only screen and (max-width: 465px) {
+  .banner-content,
+  .banner-social,
+  .download_cv {
+    margin-left: 16%;
   }
   .commonBtn {
-  font-size: 12px;
-}
-.name{
+    font-size: 12px;
+  }
+  .name {
     font-size: 12px;
     line-height: 20px !important;
-}
-.banner-social a {
-  font-size: 22px;
-}
-.contact{
-      flex-direction: column;
   }
-  .gallery{
+  .banner-social a {
+    font-size: 22px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .gallery {
     grid-template-columns: repeat(1, 1fr);
-}
-.project-nav{
-  padding: 0 25px;
-}
+  }
+  .project-nav {
+    padding: 0 25px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   .project-img {
     grid-template-columns: repeat(1, 1fr);
   }
-  .contact{
-      flex-direction: column;
+  .contact {
+    flex-direction: column;
   }
-  .address{
-      margin: 0;
+  .banner-right {
+    margin-left: -30px;
+  }
+  .experience p {
+    font-size: 12px;
   }
 }
