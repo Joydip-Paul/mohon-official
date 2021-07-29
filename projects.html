@@ -12,25 +12,22 @@
     <link rel="stylesheet" href="Assets/CSS/fontawesome.min.css" />
   </head>
   <body id="bg-white">
-    <nav class="bg-dark project-nav">
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn text-white fs-1">
-        <i class="fas fa-bars"></i>
-      </label>
-      <a
-        href="index.html"
-        class="logo p-5 text-decoration-none text-white fw-bold fs-4"
-      >
-        Mohon <span class="theme-color-1">.</span>
-      </a>
-      <ul class="menu">
-        <li class="">
-          <a href="index.html" class="back text-white">
-            <i class="fas fa-chevron-left"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+     <header id="header" class="">
+      <div class="container">
+        <div class="nav-list">
+          <a href="mailto: contact@asish.co" class="logo"
+            ><i class="fas fa-paper-plane palne"></i> contact@asish.co</a
+          >
+          <ul>
+              <a href="index.html" onclick="toggle()" class="theme-color-1 text-decoration-none"
+                ><i class="fas fa-chevron-left"></i></a
+              >
+            </li>
+          </ul>
+          <div class="toggle" onclick="toggle()"></div>
+        </div>
+      </div>
+    </header>
 
     <!-- Header Section is End -->
 
@@ -103,11 +100,11 @@
     </div>
 
     <!-- Footer Section is Start -->
-    <section class="pt-5 pb-3 footer-area">
+    <section class="footer-area pt-60">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <div class="footer-me mx-3">
+            <div class="footer-me mx-3 pb-3">
               <h1 class="fs-4 theme-color-1">
                 Mohon<span class="text-white fs-2">.</span>
               </h1>
@@ -134,21 +131,26 @@
               </div>
             </div>
           </div>
-          <div class="col-md-8 d-flex my-2 contact">
+          <div class="col-md-8 my-2 contact">
             <div class="single-footer phone">
-              <h4 class="text-white pb-3 title-tag">MAKE CALL</h4>
+              <h4 class="text-white pb-3">MAKE CALL</h4>
               <p>+880 1638404238</p>
               <p>+880 1736799077</p>
             </div>
             <div class="single-footer address">
-              <h4 class="text-white pb-3 title-tag">ADDRESS</h4>
+              <h4 class="text-white pb-3">ADDRESS</h4>
               <p>Sylhet, Bangladesh</p>
-              <p>Postal Code: 3320</p>
+              <p>Postal Code: 3100</p>
             </div>
             <div class="single-footer">
-              <h4 class="text-white pb-3 title-tag">SENT MAIL</h4>
+              <h4 class="text-white pb-3">SENT MAIL</h4>
+              <p>contact@asish.co</p>
               <p>mohon.design@gmail.com</p>
-              <p>mohon.design@gmail.com</p>
+            </div>
+            <div class="single-footer">
+              <h4 class="text-white pb-3">SKETCH</h4>
+              <p>+880 1638404238</p>
+              <p>learnwithsketch@gmail.com</p>
             </div>
           </div>
         </div>
@@ -164,6 +166,7 @@
     </section>
     <!-- Footer Section is End -->
 
+    <script src="Assets/JS/main.js"></script>
     <script src="Assets/JS/all.js"></script>
     <script src="Assets/JS/bootstrap.bundle.min.js"></script>
     <script src="Assets/JS/fontawesome.min.js"></script>

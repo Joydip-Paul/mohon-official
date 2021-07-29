@@ -42,14 +42,14 @@
     line-height: 1px;
     font-size: 10px;
   }
-  .header{
+  /* .header{
     position: relative;
   }
   .logo {
     font-size: 12px;
     position: absolute;
     left: 25px;
-  }
+  } */
   .toggle{
     position: absolute;
     right: 25px;

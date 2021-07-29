@@ -40,16 +40,16 @@ body {
   padding: 60px 0 60px 0;
 } */
 
-.pt-60{
-  padding-top: 60px;
+.pt-60 {
+  padding-top: 80px;
 }
 
-.pb-60{
-  padding-bottom: 60px;
+.pb-60 {
+  padding-bottom: 80px;
 }
 
 .commonBtn {
-  padding: 10px 48px;
+  padding: 12px 30px;
   border-radius: 10px;
   border: 2px solid var(--theme-color);
   color: var(--white);
@@ -64,18 +64,16 @@ body {
 }
 
 /* Banner area is start */
-.banner-area{
+.banner-area {
   padding-top: 100px;
 }
 
 .banner-right {
-
 }
 
 .banner-content {
   margin-top: 10%;
 }
-
 
 .banner-social a {
   margin: 0 15px;
@@ -202,12 +200,12 @@ body {
   padding-bottom: 20px;
 }
 
-.contact{
+.contact {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.single-footer{
+.single-footer {
   margin: 0 20px;
 }
 
@@ -239,161 +237,162 @@ body {
   font-size: 10px;
 }
 
-.single-footer{
+.single-footer {
   /* position: relative; */
 }
 
-
 /* ============================= Projects =========================== */
 
-.wrapper{
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 30px;
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-top: 100px;
 }
 
 /* Gallery */
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
 }
 
 /* Gallery Images */
 
-.gallery__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-    box-shadow: 0 7px 15px rgba(0,0,0,.15);
-    padding: 7px;
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+  padding: 7px;
 }
 
-#bg-white{
-  background-color: #E1E8EB;
+#bg-white {
+  background-color: #e1e8eb;
 }
 
-.gallery2{
+.gallery2 {
   margin-top: 30px;
 }
 
-.project-nav{
+.project-nav {
   padding: 0 75px;
 }
 
-
-
-
-.palne{
+.palne {
   color: #ffd200;
 }
 
-header{
-    position: fixed;
+header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background: #111111;
+}
+.nav-list {
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list .logo {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-list ul {
+  position: relative;
+  display: flex;
+  margin-top: 14px;
+}
+.nav-list ul li {
+  position: relative;
+  list-style: none;
+}
+.nav-list ul li a {
+  position: relative;
+  padding: 5px 20px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-listr ul li a:hover {
+  /* border-bottom: 1px solid #ffd200; */
+  color: #fff;
+}
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-list ul {
+    position: absolute;
+    top: -10%;
+    left: 0;
     width: 100%;
-    height: 80px;
-    padding: 0 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111111;
-    z-index: 1000;
-}
-header .logo{
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: 500;
-}
-header ul{
+    height: calc(100vh-80px);
+    padding: 50px;
+    text-align: center;
+    overflow: auto;
+    transition: 1s;
+    background: #161616;
+    flex-direction: column;
+    margin-top: -2px;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  header.active ul {
+    opacity: 1;
+    top: 80px;
+    transform: translateY(0);
+  }
+  header ul li a {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  .toggle {
+    display: block;
     position: relative;
-    display: flex;
-    margin-top: 14px;
-}
-header ul li{
-    position: relative;
-    list-style: none;
-}
-header ul li a{
-    position: relative;
-    padding: 5px 20px;
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-}
-
-header ul li a:hover{
-    border-bottom: 1px solid #ffd200;
-    color: #fff;
-}
-
-.toggle{
-    display: none;
-}
-
-@media(max-width: 768px){
-    header ul{
-        position: absolute;
-        top: -10%;
-        left: 0;
-        width: 100%;
-        height: calc(100vh-80px);
-        padding: 50px;
-        text-align: center;
-        overflow: auto;
-        transition: 1s;
-        background: #161616;
-        flex-direction: column;
-        margin-top: -2px;
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    header.active ul{
-        opacity: 1;
-        top: 80px;
-        transform: translateY(0);
-    }
-    header ul li a{
-        margin: 5px 0;
-        font-size: 18px;
-    }
-    .toggle{
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-    .toggle:before{
-        content: '';
-        position: absolute;
-        top: 4px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        z-index: 1;
-        box-shadow: 0 10px 0 #fff;
-        transition: .5s;
-    }
-    .toggle:after{
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        z-index: 1;
-        transition: .5s;
-    }
-    header.active .toggle:before{
-        top: 14px;
-        transform: rotate(45deg);
-        box-shadow: 0 0 0 #fff;
-    }
-    header.active .toggle:after{
-        bottom: 14px;
-        transform: rotate(-45deg);
-    }
+  }
+  .toggle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 10px 0 #fff;
+    transition: 0.5s;
+  }
+  .toggle:after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  header.active .toggle:before {
+    top: 14px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+  }
+  header.active .toggle:after {
+    bottom: 14px;
+    transform: rotate(-45deg);
+  }
 }
