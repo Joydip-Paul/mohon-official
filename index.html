@@ -13,53 +13,19 @@
     <link rel="stylesheet" href="Assets/CSS/responsive.css" />
   </head>
   <body>
-    <!-- <main> -->
-    <div class="container">
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn text-white fs-1">
-          <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="logo p-5"
-          ><img src="Assets/Images/logo.png" alt=""
-        /></a>
-        <ul class="menu">
-          <li class="">
-            <a
-              href="#"
-              class="text-decoration-none text-white text-capitalize p-3"
-              >Home</a
-            >
-          </li>
-          <li class="">
-            <a
-              href="#project"
-              class="text-decoration-none text-white text-capitalize p-3"
-              >Projects</a
-            >
-          </li>
-          <li class="">
-            <a
-              href="#about"
-              class="text-decoration-none text-white text-capitalize p-3"
-              >About</a
-            >
-          </li>
-          <li class="">
-            <a
-              href="http://www.behance.net/mohonn"
-              target="_blank"
-              class="text-decoration-none text-capitalize hire-meBtn commonBtn"
-              >behance</a
-            >
-          </li>
+    <header id="header">
+        <a href="mailto: contact@asish.co" class="logo"><i class="fas fa-paper-plane palne"></i> contact@asish.co</a>
+        <ul>
+            <li><a href="#portfolio" onclick="toggle()">About</a></li>
+            <li><a href="#team" onclick="toggle()">Skills</a></li>
+            <li><a href="#contact" onclick="toggle()">Designs</a></li>
         </ul>
-      </nav>
-
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
       <!-- Header Section is End -->
 
       <!-- Banner Area is Start -->
-      <section class="banner-area p-5">
+      <section class="banner-area">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12">
@@ -75,8 +41,11 @@
                 <h1 class="theme-color-1 fw-bold">Creative Designer</h1>
                 <small class="text-white"
                   >I am a Graphic Designer, an Entrepreneur and a lifetime
-                  student.
+                  student. <br>
                 </small>
+                <p class="theme-color-1 fs-5" style="padding-top: 10px;">
+                  Expert in Social Media post Design
+                </p>
               </div>
               <div class="banner-social d-flex">
                 <a
@@ -111,7 +80,7 @@
       </section>
 
       <!-- About Me Section is Start -->
-      <section class="about-me p-5" id="about">
+      <section class="about-me" id="about">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12 py-4 about-me-left">
@@ -132,8 +101,8 @@
                 >Hire Me</a
               >
             </div>
-            <div class="col-md-6 col-sm-12 py-4 about-me-right">
-              <img src="Assets/Images/aboutImg.png" alt="" class="profileImg" />
+            <div class="col-md-6 col-sm-12 about-me-right">
+              <img src="Assets/Images/aboutImg.png" alt="" class="" />
             </div>
           </div>
         </div>
@@ -141,7 +110,7 @@
       <!-- About Me Section is End -->
 
       <!-- Skill section is Start -->
-      <section class="skill-area p-5">
+      <section class="skill-area">
         <div class="container">
           <div class="col-md-12 pb-5">
             <div class="text-center">
@@ -191,9 +160,9 @@
       </section>
       <!-- Skill section is End -->
 
-      <section class="project-area p-5" id="project">
+      <section class="project-area" id="project">
         <div class="container">
-          <h1 class="text-center theme-color-1 pt-5 fw-bold fs-2">
+          <h1 class="text-center theme-color-1 fw-bold fs-2">
             My Recent Work
           </h1>
           <p class="text-center text-white">
@@ -219,7 +188,7 @@
               <img src="Assets/Images/image 6 (1).png" alt="" />
             </div>
           </div>
-          <div class="more-design text-center pb-5">
+          <div class="more-design text-center">
             <a
               href="projects.html"
               target="_blank"
@@ -231,9 +200,9 @@
       </section>
 
       <!-- Experience Area is Start -->
-      <section class="p-5">
+      <section class="">
         <div class="container">
-          <h1 class="text-center theme-color-1 pt-5 fs-2 fw-bold">
+          <h1 class="text-center theme-color-1 fs-2 fw-bold">
             Work Experience
           </h1>
           <div class="row">
@@ -274,7 +243,7 @@
       <!-- Experience Area is End -->
 
       <!-- Get In Touch Section is Start -->
-      <section class="p-5 text-center">
+      <section class="text-center">
         <div class="container">
           <h1 class="fs-2 fw-bold theme-color-1">Get in Touch</h1>
           <p class="text-white get-me-content">
@@ -289,7 +258,7 @@
     <!-- Get In Touch Section is End -->
 
     <!-- Footer Section is Start -->
-    <section class="pt-5 pb-3 footer-area">
+    <section class="footer-area">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -350,6 +319,7 @@
     </section>
     <!-- Footer Section is End -->
 
+    <script src="Assets/JS/main.js"></script>
     <script src="Assets/JS/all.js"></script>
     <script src="Assets/JS/bootstrap.bundle.min.js"></script>
     <script src="Assets/JS/fontawesome.min.js"></script>
