@@ -340,12 +340,13 @@ header ul li a:hover{
         left: 0;
         width: 100%;
         height: calc(100vh-80px);
-        padding: 50px 100px;
+        padding: 50px;
         text-align: center;
         overflow: auto;
         transition: 1s;
-        background: #000;
+        background: #161616;
         flex-direction: column;
+        margin-top: -2px;
         opacity: 0;
         transform: translateY(-100%);
     }
@@ -356,7 +357,7 @@ header ul li a:hover{
     }
     header ul li a{
         margin: 5px 0;
-        font-size: 24px;
+        font-size: 18px;
     }
     .toggle{
         display: block;

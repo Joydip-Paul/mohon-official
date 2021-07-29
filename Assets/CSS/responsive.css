@@ -109,6 +109,9 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
+.banner-right {
+  margin-left: -50px;
+}
 }
 
 @media only screen and (max-width: 320px) {
