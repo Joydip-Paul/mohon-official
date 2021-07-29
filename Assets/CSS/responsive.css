@@ -1,10 +1,17 @@
 @media only screen and (max-width: 1200px) {
+  .single-footer p {
+  font-size: 9px;
+}
 }
 
 @media only screen and (max-width: 992px) {
   .single-icon p {
     font-size: 10px;
   }
+  .contact{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,6 +54,10 @@
     position: absolute;
     right: 25px;
   }
+  .contact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -94,19 +105,26 @@
   .project-nav {
     padding: 0 25px;
   }
+  .contact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
 }
 
 @media only screen and (max-width: 320px) {
   .project-img {
     grid-template-columns: repeat(1, 1fr);
   }
-  .contact {
-    flex-direction: column;
-  }
-  .banner-right {
-    /* margin-left: -48px; */
-  }
+
   .experience p {
     font-size: 12px;
   }
+  .banner-right {
+  margin-left: -35px;
+}
+.contact{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
 }
