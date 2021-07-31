@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="Assets/CSS/style.css" />
     <link rel="stylesheet" href="Assets/CSS/responsive.css" />
   </head>
-  <body>
+  <body class="position-relative">
+
+    <button onclick="Joydip()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
     <header id="header" class="">
       <div class="container">
         <div class="nav-list">
@@ -293,10 +296,10 @@
             </div>
           </div>
           <div class="col-md-8 my-2 contact">
-            <div class="single-footer phone">
+            <div class="single-footer phone call">
               <h4 class="text-white pb-3">MAKE CALL</h4>
-              <p>+880 1638404238</p>
-              <p>+880 1736799077</p>
+              <p><a href="tel:+8801638404238" class="text-decoration-none">+880 1638404238</a></p>
+              <p><a href="tel:+8801736799077" class="text-decoration-none">+880 1638404238</a></p>
             </div>
             <div class="single-footer address">
               <h4 class="text-white pb-3">ADDRESS</h4>
@@ -327,6 +330,7 @@
       >
     </section>
     <!-- Footer Section is End -->
+
 
     <script src="Assets/JS/main.js"></script>
     <script src="Assets/JS/all.js"></script>

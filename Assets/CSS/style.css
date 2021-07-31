@@ -61,7 +61,7 @@ body {
 
 /* Banner area is start */
 .banner-area {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 
@@ -206,6 +206,10 @@ body {
 .footer-area p {
   color: #868686;
   font-size: 14px;
+}
+
+.call p a{
+  color: #868686;
 }
 
 .single-footer p {
@@ -390,3 +394,21 @@ header {
 }
 
 /* =============================== Header area is End ============================ */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  background: #ffd200;
+  color: #111111;
+}
+
+#mybtn:focus{
+  outline: none;
+}
