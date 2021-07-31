@@ -407,6 +407,7 @@ header {
   padding: 10px;
   background: #ffd200;
   color: #111111;
+  border: none;
 }
 
 #mybtn:focus{
