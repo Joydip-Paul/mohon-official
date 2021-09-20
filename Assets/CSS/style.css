@@ -474,6 +474,12 @@ header {
   width:0px;
 }
 
+.skill-counter{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
 .skill-single-counter{
   background-color: #161616;
   padding: 1rem;
