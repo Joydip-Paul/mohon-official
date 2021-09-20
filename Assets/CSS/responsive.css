@@ -2,9 +2,6 @@
   .single-footer p {
     font-size: 9px;
   }
-    .skill-single-counter{
-  width: 13rem;
-}
 }
 
 @media only screen and (max-width: 992px) {
@@ -85,8 +82,8 @@
     line-height: 1px;
     font-size: 10px;
   }
-  .skill-single-counter{
-  width: 10rem;
+  .d-grid{
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 }
 

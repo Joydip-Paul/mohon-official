@@ -59,15 +59,6 @@ body {
   border: 2px solid var(--theme-color);
 }
 
-.d-grid{
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  justify-items: center;
-  gap: 1rem;
-  row-gap: 1rem;
-}
-
 /* Banner area is start */
 .banner-area {
   padding-top: 150px;
@@ -474,11 +465,11 @@ header {
   width:0px;
 }
 
-.skill-counter{
+/* .skill-counter{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-}
+} */
 
 .skill-single-counter{
   background-color: #161616;
@@ -494,5 +485,13 @@ header {
   font-size: 1.5rem;
 }
 
+.d-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-items: center;
+  gap: 1rem;
+  row-gap: 1rem;
+}
 
 /* skills  */
