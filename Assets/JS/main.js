@@ -4,7 +4,7 @@ function toggle() {
 }
 
 
-// Scroll Button
+// Scroll Button Start
 var myButton = document.getElementById("myBtn");
 window.onscroll = function() {Jishu()};
 function Jishu() {
@@ -18,3 +18,51 @@ function Joydip() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// Scroll Button End
+
+// skill slider start
+$(window).scroll(function () {
+  var hT = $('#skill-bar-wrapper').offset().top,
+    hH = $('#skill-bar-wrapper').outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+  if (wS > (hT + hH - 1.4 * wH)) {
+    jQuery(document).ready(function () {
+      jQuery('.skillbar-container').each(function () {
+        jQuery(this).find('.skills').animate({
+          width: jQuery(this).attr('data-percent')
+        }, 5000); // 5 seconds
+      });
+    });
+  }
+});
+
+// skill slider End
+
+
+// Counter Start
+$(window).on("load resize", function () {
+
+  var counters = $(".count");
+  var countersQuantity = counters.length;
+  var counter = [];
+
+  for (i = 0; i < countersQuantity; i++) {
+    counter[i] = parseInt(counters[i].innerHTML);
+  }
+
+  var count = function (start, value, id) {
+    var localStart = start;
+    setInterval(function () {
+      if (localStart < value) {
+        localStart++;
+        counters[id].innerHTML = localStart+"+";
+      }
+    }, 4);
+  }
+
+  for (j = 0; j < countersQuantity; j++) {
+    count(0, counter[j], j);
+  }
+});
+// Counter Start End

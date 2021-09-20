@@ -59,6 +59,15 @@ body {
   border: 2px solid var(--theme-color);
 }
 
+.d-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+  row-gap: 1rem;
+}
+
 /* Banner area is start */
 .banner-area {
   padding-top: 150px;
@@ -83,6 +92,10 @@ body {
 
 #first-icon {
   margin: 0 15px 0 0;
+}
+
+.icon:hover{
+  color: #ffd200;
 }
 
 /* About Me area is start */
@@ -208,8 +221,13 @@ body {
   font-size: 14px;
 }
 
-.call p a{
+.call p a, .call a{
   color: #868686;
+  transition: .5s ease-in-out;
+}
+
+.call p a:hover, .call a:hover{
+  color: #ffd200;
 }
 
 .single-footer p {
@@ -231,7 +249,7 @@ body {
 
 #joydip {
   line-height: 1px;
-  color: #303030;
+  color: #1a1a1a;
   font-size: 10px;
 }
 
@@ -285,6 +303,7 @@ header {
   left: 0;
   width: 100%;
   background: #111111;
+  z-index: 999;
 }
 .nav-list {
   height: 80px;
@@ -317,10 +336,31 @@ header {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+}
+
+.nav-list ul li a:after{
+   content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(50%) scale(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 60%;
+    height: 1px;
+    background-color: #ffd200;
+    -webkit-transition: 250ms;
+    transition: transform 250ms;
+}
+
+.nav-list ul li a:hover:after{
+   transform: translateX(-50%) scaleX(1);
 }
 
 .nav-list ul li a:hover {
-  border-bottom: 1px solid #ffd200;
+  /* border-bottom: 1px solid #ffd200; */
   color: #fff;
 }
 
@@ -413,3 +453,40 @@ header {
 #mybtn:focus{
   outline: none;
 }
+
+/* skills  */
+.text-left small{
+  color: #ffd200;
+}
+.skillbar-container {
+  position:relative;
+  display:block;
+  margin-bottom: 15px;   
+  width: 100%;
+  background-color: #ffffff1a;
+  height:35px;
+  height:10px;
+}
+  
+.skills {
+  height:35px;
+  height:10px;
+  width:0px;
+}
+
+.skill-single-counter{
+  background-color: #161616;
+  padding: 1rem;
+  border-radius: 5px;
+  height: 10rem;
+  width: 16rem;
+  position: relative;
+}
+
+.skill-single-counter .counter-icon{
+  color: #ffd200;
+  font-size: 1.5rem;
+}
+
+
+/* skills  */

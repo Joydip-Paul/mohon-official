@@ -59,6 +59,9 @@
 .banner-area {
   padding-top: 80px;
 }
+.skill-single-counter{
+  width: 14rem;
+}
 }
 
 @media only screen and (max-width: 600px) {
