@@ -10,6 +10,15 @@ body {
   background-color: var(--theme-color--two);
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffd200;
+  outline: none;
+}
+
 :root {
   --theme-color: #ffd200;
   --theme-color--two: #111111;
@@ -111,7 +120,7 @@ body {
 
 .about-me-right img {
   float: right;
-  width: 75%;
+  width: 50%;
 }
 
 .about-me-right img:hover {
@@ -477,12 +486,26 @@ header {
   border-radius: 5px;
   height: 10rem;
   width: 16rem;
-  position: relative;
+}
+
+.skill-single-counter h2{
+	font-size: 2rem;
+	font-weight: 600;
+	margin: .5rem 0;
+	position: relative;
+}
+
+.skill-single-counter h2:after{
+  content: "+";
+	position: absolute;
+  top: -1rem;
+	font-weight: 400 !important;
+	color: #ffd200;
 }
 
 .skill-single-counter .counter-icon{
   color: #ffd200;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .d-grid{

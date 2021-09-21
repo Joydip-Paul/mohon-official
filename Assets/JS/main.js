@@ -1,3 +1,19 @@
+$(window).on("load", function () {
+
+  "use strict";
+
+  /* ===================================
+          Loading Timeout
+   ====================================== */
+
+  $('.side-menu').removeClass('hidden');
+
+  setTimeout(function () {
+    $('.preloader').fadeOut();
+  }, 1000);
+
+});
+
 function toggle() {
   var header = document.getElementById("header");
   header.classList.toggle("active");
@@ -56,7 +72,7 @@ $(window).on("load resize", function () {
     setInterval(function () {
       if (localStart < value) {
         localStart++;
-        counters[id].innerHTML = localStart+"+";
+        counters[id].innerHTML = localStart;
       }
     }, 4);
   }

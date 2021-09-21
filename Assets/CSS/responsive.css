@@ -2,6 +2,9 @@
   .single-footer p {
     font-size: 9px;
   }
+  .d-grid{
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media only screen and (max-width: 992px) {
@@ -12,6 +15,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .about-me-right img {
+    margin-top: 18%;
+    width: 80%;
+  }
+  .d-grid{
+  grid-template-columns: repeat(2, 1fr);
+}
+.d-grid{
+  grid-template-columns: repeat(2, 1fr);
+}
+.skill-single-counter{
+  width: 20rem;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -59,9 +75,10 @@
 .banner-area {
   padding-top: 80px;
 }
-.skill-single-counter{
-  width: 14rem;
+.d-grid{
+  grid-template-columns: repeat(2, 1fr);
 }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -83,7 +100,10 @@
     font-size: 10px;
   }
   .d-grid{
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+}
+.skill-single-counter{
+  width: 10rem;
 }
 }
 
@@ -119,9 +139,6 @@
   .banner-right {
     margin-left: -50px;
   }
-  .skill-single-counter{
-  width: 8rem;
-}
 }
 
 @media only screen and (max-width: 320px) {

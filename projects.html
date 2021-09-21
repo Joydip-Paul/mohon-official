@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>asish.co</title>
     <link rel="shortcut icon" type="image/png" href="Assets/Images/title2.png" />
+    <link rel="stylesheet" href="Assets/CSS/animation.css">
     <link rel="stylesheet" href="Assets/CSS/style.css" />
     <link rel="stylesheet" href="Assets/CSS/responsive.css" />
     <link rel="stylesheet" href="Assets/CSS/all.min.css" />
@@ -12,6 +13,21 @@
     <link rel="stylesheet" href="Assets/CSS/fontawesome.min.css" />
   </head>
   <body id="bg-white">
+    <button onclick="Joydip()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="centrize full-width">
+        <div class="vertical-center">
+          <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader End -->
      <header id="header" class="">
       <div class="container">
         <div class="nav-list">
@@ -154,6 +170,7 @@
     </section>
     <!-- Footer Section is End -->
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="Assets/JS/main.js"></script>
     <script src="Assets/JS/all.js"></script>
     <script src="Assets/JS/bootstrap.bundle.min.js"></script>
