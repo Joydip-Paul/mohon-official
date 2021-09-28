@@ -185,7 +185,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Projects Section is End */
 
-/* Experience Section is End */
+/* Experience Section is Start */
 .date {
   font-size: 12px;
 }
@@ -196,6 +196,12 @@ body::-webkit-scrollbar-thumb {
 
 .experience span {
   font-weight: 400;
+}
+
+.experience{
+  background-color: #161616;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 /* Experience Section is End */
@@ -498,7 +504,7 @@ header {
 .skill-single-counter h2:after{
   content: "+";
 	position: absolute;
-  top: -1rem;
+  top: 0;
 	font-weight: 400 !important;
 	color: #ffd200;
 }
@@ -518,3 +524,4 @@ header {
 }
 
 /* skills  */
+
